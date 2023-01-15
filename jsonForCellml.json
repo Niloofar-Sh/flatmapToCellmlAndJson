@@ -1,0 +1,240 @@
+{
+    "q_0": {
+        "value": "5",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:39123', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['calcium cation', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_1": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:31340', 'FMA:70022', 'OPB_00340']",
+        "meaning": "['Calcium folinate', 'Extracellular space', 'Concentration of chemical']"
+    },
+    "q_2": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:39000', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['sodium channel modulator', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_3": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:62965', 'FMA:70022', 'OPB_00340']",
+        "meaning": "['sodium formate', 'Extracellular space', 'Concentration of chemical']"
+    },
+    "q_4": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:29101', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['sodium(1+)', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_5": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['FMA:70022', 'OPB_00340', 'CHEBI:29101']",
+        "meaning": "['Extracellular space', 'Concentration of chemical', 'sodium(1+)']"
+    },
+    "q_6": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:31340', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['Calcium folinate', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_7": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:39123', 'FMA:70022', 'OPB_00340']",
+        "meaning": "['calcium cation', 'Extracellular space', 'Concentration of chemical']"
+    },
+    "q_8": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['FMA:70022', 'OPB_00340', 'CHEBI:39000']",
+        "meaning": "['Extracellular space', 'Concentration of chemical', 'sodium channel modulator']"
+    },
+    "q_9": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:62965', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['sodium formate', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_10": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['FMA:70022', 'OPB_00340', 'CHEBI:81851']",
+        "meaning": "['Extracellular space', 'Concentration of chemical', 'Calcium formate']"
+    },
+    "q_11": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:38807', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['calcium channel agonist', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_12": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['CHEBI:81851', 'OPB_00340', 'FMA:226050']",
+        "meaning": "['Calcium formate', 'Concentration of chemical', 'Cytosol of cardiac myocyte']"
+    },
+    "q_13": {
+        "value": "1",
+        "unit": "concentrationUnit",
+        "rdf": "['FMA:70022', 'CHEBI:38807', 'OPB_00340']",
+        "meaning": "['Extracellular space', 'calcium channel agonist', 'Concentration of chemical']"
+    },
+    "K_0": {
+        "value": "2",
+        "unit": "speciesConstantUnit",
+        "rdf": "['CHEBI:39123', 'OPB_00079', 'FMA:226050']",
+        "meaning": "['calcium cation', 'Thermodynamical property', 'Cytosol of cardiac myocyte']"
+    },
+    "K_1": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:31340', 'FMA:70022']",
+        "meaning": "['Thermodynamical property', 'Calcium folinate', 'Extracellular space']"
+    },
+    "K_2": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:39000', 'FMA:226050']",
+        "meaning": "['Thermodynamical property', 'sodium channel modulator', 'Cytosol of cardiac myocyte']"
+    },
+    "K_3": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:62965', 'FMA:70022']",
+        "meaning": "['Thermodynamical property', 'sodium formate', 'Extracellular space']"
+    },
+    "K_4": {
+        "value": "10",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:29101', 'FMA:226050']",
+        "meaning": "['Thermodynamical property', 'sodium(1+)', 'Cytosol of cardiac myocyte']"
+    },
+    "K_5": {
+        "value": "100",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'FMA:70022', 'CHEBI:29101']",
+        "meaning": "['Thermodynamical property', 'Extracellular space', 'sodium(1+)']"
+    },
+    "K_6": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:31340', 'FMA:226050']",
+        "meaning": "['Thermodynamical property', 'Calcium folinate', 'Cytosol of cardiac myocyte']"
+    },
+    "K_7": {
+        "value": "100",
+        "unit": "speciesConstantUnit",
+        "rdf": "['CHEBI:39123', 'FMA:70022', 'OPB_00079']",
+        "meaning": "['calcium cation', 'Extracellular space', 'Thermodynamical property']"
+    },
+    "K_8": {
+        "value": "1000",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'FMA:70022', 'CHEBI:39000']",
+        "meaning": "['Thermodynamical property', 'Extracellular space', 'sodium channel modulator']"
+    },
+    "K_9": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:62965', 'FMA:226050']",
+        "meaning": "['Thermodynamical property', 'sodium formate', 'Cytosol of cardiac myocyte']"
+    },
+    "K_10": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'FMA:70022', 'CHEBI:81851']",
+        "meaning": "['Thermodynamical property', 'Extracellular space', 'Calcium formate']"
+    },
+    "K_11": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:38807', 'FMA:226050']",
+        "meaning": "['Thermodynamical property', 'calcium channel agonist', 'Cytosol of cardiac myocyte']"
+    },
+    "K_12": {
+        "value": "1",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'CHEBI:81851', 'FMA:226050']",
+        "meaning": "['Thermodynamical property', 'Calcium formate', 'Cytosol of cardiac myocyte']"
+    },
+    "K_13": {
+        "value": "1000",
+        "unit": "speciesConstantUnit",
+        "rdf": "['OPB_00079', 'FMA:70022', 'CHEBI:38807']",
+        "meaning": "['Thermodynamical property', 'Extracellular space', 'calcium channel agonist']"
+    },
+    "v_0": {},
+    "v_1": {},
+    "v_2": {},
+    "v_3": {},
+    "v_4": {},
+    "v_5": {},
+    "v_6": {},
+    "v_7": {},
+    "v_8": {},
+    "v_9": {},
+    "kappa_0": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'SLC4A1_Re2', 'OPB_01296']",
+        "meaning": "['reaction intermediate', 'SLC4A1_Re2', 'Reaction rate constant']"
+    },
+    "kappa_1": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC4A1_Re6']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC4A1_Re6']"
+    },
+    "kappa_2": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['SLC4A1_Re3', 'CHEBI:64297', 'OPB_01296']",
+        "meaning": "['SLC4A1_Re3', 'reaction intermediate', 'Reaction rate constant']"
+    },
+    "kappa_3": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC4A1_Re4']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC4A1_Re4']"
+    },
+    "kappa_4": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC4A1_Re1']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC4A1_Re1']"
+    },
+    "kappa_5": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC4A1_Re5']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC4A1_Re5']"
+    },
+    "kappa_6": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC2A1_Re1']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC2A1_Re1']"
+    },
+    "kappa_7": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC2A1_Re2']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC2A1_Re2']"
+    },
+    "kappa_8": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC2A1_Re4']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC2A1_Re4']"
+    },
+    "kappa_9": {
+        "value": "1",
+        "unit": "fluxUnit",
+        "rdf": "['CHEBI:64297', 'OPB_01296', 'SLC2A1_Re3']",
+        "meaning": "['reaction intermediate', 'Reaction rate constant', 'SLC2A1_Re3']"
+    }
+}
