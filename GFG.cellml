@@ -1,0 +1,771 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model name="composed_model" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.org/cellml/1.1#" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <import xlink:href="units_BG.cellml">
+        <units name="concentrationUnit" units_ref="concentrationUnit"/>
+        <units name="speciesConstantUnit" units_ref="speciesConstantUnit"/>
+        <units name="fluxUnit" units_ref="fluxUnit"/>
+    </import>
+    <component name="main">
+        <variable initial_value="0" name="t" units="second"/>
+        <variable initial_value="0.2" name="q_0" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_1" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_2" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_3" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_4" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_5" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_6" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_7" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_8" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_9" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_10" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_11" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_12" units="concentrationUnit"/>
+        <variable initial_value="1" name="q_13" units="concentrationUnit"/>
+        <variable initial_value="5" name="K_0" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_1" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_2" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_3" units="speciesConstantUnit"/>
+        <variable initial_value="10" name="K_4" units="speciesConstantUnit"/>
+        <variable initial_value="100" name="K_5" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_6" units="speciesConstantUnit"/>
+        <variable initial_value="100" name="K_7" units="speciesConstantUnit"/>
+        <variable initial_value="1000" name="K_8" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_9" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_10" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_11" units="speciesConstantUnit"/>
+        <variable initial_value="1" name="K_12" units="speciesConstantUnit"/>
+        <variable initial_value="1000" name="K_13" units="speciesConstantUnit"/>
+        <variable name="v_0" units="fluxUnit"/>
+        <variable name="v_1" units="fluxUnit"/>
+        <variable name="v_2" units="fluxUnit"/>
+        <variable name="v_3" units="fluxUnit"/>
+        <variable name="v_4" units="fluxUnit"/>
+        <variable name="v_5" units="fluxUnit"/>
+        <variable name="v_6" units="fluxUnit"/>
+        <variable name="v_7" units="fluxUnit"/>
+        <variable name="v_8" units="fluxUnit"/>
+        <variable name="v_9" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_0" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_1" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_2" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_3" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_4" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_5" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_6" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_7" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_8" units="fluxUnit"/>
+        <variable initial_value="1" name="kappa_9" units="fluxUnit"/>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_0</ci>
+                </apply>
+                <apply>
+                    <plus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <plus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_0</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_6</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_1</ci>
+                </apply>
+                <apply>
+                    <plus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <minus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_1</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_4</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_2</ci>
+                </apply>
+                <apply>
+                    <minus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <plus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_0</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_3</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_3</ci>
+                </apply>
+                <apply>
+                    <plus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <minus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_2</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_5</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_4</ci>
+                </apply>
+                <apply>
+                    <times/>
+                    <apply>
+                        <minus/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                    </apply>
+                    <ci>v_3</ci>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_5</ci>
+                </apply>
+                <apply>
+                    <times/>
+                    <apply>
+                        <plus/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                    </apply>
+                    <ci>v_2</ci>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_6</ci>
+                </apply>
+                <apply>
+                    <plus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <minus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_0</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_1</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_7</ci>
+                </apply>
+                <apply>
+                    <minus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <minus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_4</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_7</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_8</ci>
+                </apply>
+                <apply>
+                    <minus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <plus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_2</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_4</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_9</ci>
+                </apply>
+                <apply>
+                    <minus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <plus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_3</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_5</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_10</ci>
+                </apply>
+                <apply>
+                    <minus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <plus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_7</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_8</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_11</ci>
+                </apply>
+                <apply>
+                    <minus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <plus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_6</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_9</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_12</ci>
+                </apply>
+                <apply>
+                    <plus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <minus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_6</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_8</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>t</ci>
+                    </bvar>
+                    <ci>q_13</ci>
+                </apply>
+                <apply>
+                    <plus/>
+                    <apply>
+                        <times/>
+                        <apply>
+                            <minus/>
+                            <cn cellml:units="dimensionless">1.0</cn>
+                        </apply>
+                        <ci>v_7</ci>
+                    </apply>
+                    <apply>
+                        <times/>
+                        <cn cellml:units="dimensionless">1.0</cn>
+                        <ci>v_9</ci>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_0</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_0</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_6</ci>
+                                <ci>K_6</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_0</ci>
+                                    <ci>K_0</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_2</ci>
+                                    <ci>K_2</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_1</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_1</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_1</ci>
+                                <ci>K_1</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_6</ci>
+                                <ci>K_6</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_2</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_2</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_3</ci>
+                                <ci>K_3</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_5</ci>
+                                    <ci>K_5</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_8</ci>
+                                    <ci>K_8</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_3</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_3</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_4</ci>
+                                    <ci>K_4</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_2</ci>
+                                    <ci>K_2</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_9</ci>
+                                <ci>K_9</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_4</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_4</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_7</ci>
+                                    <ci>K_7</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_8</ci>
+                                    <ci>K_8</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_1</ci>
+                                <ci>K_1</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_5</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_5</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_9</ci>
+                                <ci>K_9</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_3</ci>
+                                <ci>K_3</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_6</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_6</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_12</ci>
+                                <ci>K_12</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_0</ci>
+                                    <ci>K_0</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_11</ci>
+                                    <ci>K_11</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_7</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_7</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_13</ci>
+                                    <ci>K_13</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                            <apply>
+                                <power/>
+                                <apply>
+                                    <times/>
+                                    <ci>q_7</ci>
+                                    <ci>K_7</ci>
+                                </apply>
+                                <cn cellml:units="dimensionless">1</cn>
+                            </apply>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_10</ci>
+                                <ci>K_10</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_8</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_8</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_10</ci>
+                                <ci>K_10</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_12</ci>
+                                <ci>K_12</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>v_9</ci>
+                <apply>
+                    <times/>
+                    <ci>kappa_9</ci>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_11</ci>
+                                <ci>K_11</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                        <apply>
+                            <power/>
+                            <apply>
+                                <times/>
+                                <ci>q_13</ci>
+                                <ci>K_13</ci>
+                            </apply>
+                            <cn cellml:units="dimensionless">1</cn>
+                        </apply>
+                    </apply>
+                </apply>
+            </apply>
+        </math>
+    </component>
+</model>
