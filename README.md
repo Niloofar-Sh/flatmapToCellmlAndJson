@@ -1,7 +1,7 @@
 # flatmapToCellmlAndJson
 A Jupyter Notebook to generate a CellML file for the selected structures in the Generic Cell Flatmap
 
-The Jupyter Notebook CellmlScriptProductionEnzymes.ipynb is the main code file.
+The Jupyter Notebook CellmlScriptProductionEnzymes_findValueRange.ipynb is the main code file.
 
 The enzymes file includes the .cellml files which describe the parameters of the structures found on the Generic Cell Flatmap.
 
