@@ -1,6 +1,19 @@
 # flatmapToCellmlAndJson
 A Jupyter Notebook to generate a CellML file for the selected structures in the Generic Cell Flatmap
 
+👉 To use the code, you need to download and save the required ontologies as .csv files. 👈
+
+- OPB: https://bioportal.bioontology.org/ontologies/OPB
+
+- GO: https://bioportal.bioontology.org/ontologies/GO
+
+- FMA: https://bioportal.bioontology.org/ontologies/FMA
+
+- CHEBI: https://bioportal.bioontology.org/ontologies/CHEBI
+
+Since the size of the stored ontologies exceeds the GitHub upload limit, the ontologies' .csv files are not uploaded here. Change the address which points to the ontologies on your local machine.
+
+
 The Jupyter Notebook **CellmlScriptProductionEnzymes_findValueRange.ipynb** is the main code file.
 
 The enzymes file includes the .cellml files which describe the parameters of the structures found on the Generic Cell Flatmap.
