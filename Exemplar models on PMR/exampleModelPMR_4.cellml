@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model cmeta:id="metaid0" name="exampleModelPMR_4" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.org/cellml/1.1#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#">
+    <units name="fmol_per_sec">
+        <unit exponent="-1.0" units="second"/>
+        <unit units="fmol"/>
+    </units>
+    <units name="per_fmol">
+        <unit exponent="-1.0" units="fmol"/>
+    </units>
+    <units name="fmol">
+        <unit prefix="femto" units="mole"/>
+    </units>
+    <component name="exampleModelPMR_4">
+        <variable cmeta:id="exampleModelPMR_4.K_Ai" initial_value="33.76" name="K_Ai" public_interface="out" units="per_fmol"/>
+        <variable cmeta:id="exampleModelPMR_4.q_Ai" initial_value="8.94" name="q_Ai" public_interface="out" units="fmol"/>
+        <variable cmeta:id="exampleModelPMR_4.K_Co" initial_value="999" name="K_Co" public_interface="out" units="per_fmol"/>
+        <variable cmeta:id="exampleModelPMR_4.q_Co" initial_value="0.085" name="q_Co" public_interface="out" units="fmol"/>
+        <variable cmeta:id="exampleModelPMR_4.kappa_Re1" initial_value="1" name="kappa_Re1" public_interface="out" units="fmol_per_sec"/>
+    </component>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#exampleModelPMR_4.q_Ai">
+            <semsim:isComputationalComponentFor xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#property_1">
+                    <semsim:physicalPropertyOf xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#entity_0">
+                            <ro:part_of xmlns:ro="http://www.obofoundry.org/ro/ro.owl#">
+                                <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#entity_1">
+                                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="http://identifiers.org/fma/FMA:226050" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                                </rdf:Description>
+                            </ro:part_of>
+                            <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/chebi/CHEBI:39123" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                        </rdf:Description>
+                    </semsim:physicalPropertyOf>
+                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/opb/OPB_00340" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                </rdf:Description>
+            </semsim:isComputationalComponentFor>
+        </rdf:Description>
+        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#exampleModelPMR_4.K_Ai">
+            <semsim:isComputationalComponentFor xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#property_0">
+                    <semsim:physicalPropertyOf xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="#entity_0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/opb/OPB_00079" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                </rdf:Description>
+            </semsim:isComputationalComponentFor>
+        </rdf:Description>
+        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#exampleModelPMR_4.q_Co">
+            <semsim:isComputationalComponentFor xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#property_3">
+                    <semsim:physicalPropertyOf xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#entity_2">
+                            <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="http://identifiers.org/fma/FMA:70022" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                            <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/chebi/CHEBI:53438" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                        </rdf:Description>
+                    </semsim:physicalPropertyOf>
+                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/opb/OPB_00340" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                </rdf:Description>
+            </semsim:isComputationalComponentFor>
+        </rdf:Description>
+        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#exampleModelPMR_4.K_Co">
+            <semsim:isComputationalComponentFor xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#property_2">
+                    <semsim:physicalPropertyOf xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="#entity_2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/opb/OPB_00079" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                </rdf:Description>
+            </semsim:isComputationalComponentFor>
+        </rdf:Description>
+        <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" description="exampleModelPMR_4_Re1" rdf:about="#exampleModelPMR_4.kappa_Re1">
+            <semsim:isComputationalComponentFor xmlns:semsim="http://www.bhi.washington.edu/SemSim#">
+                <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="#property_20">
+                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/chebi/CHEBI:64297" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                    <semsim:hasPhysicalDefinition xmlns:semsim="http://www.bhi.washington.edu/SemSim#" rdf:resource="https://identifiers.org/opb/OPB_01296" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                </rdf:Description>
+            </semsim:isComputationalComponentFor>
+        </rdf:Description>
+    </rdf:RDF>
+</model>
